@@ -1,4 +1,4 @@
-#!/home/semanas/.pyenv/versions/3.13.1/bin/python
+#!./.pyenv/versions/3.13.1/bin/python
 
 import sys,yeelight,socket
 from yeelight import Bulb,LightType,BulbType,flows,Flow,RGBTransition,SleepTransition
