@@ -1,3 +1,3 @@
 Note that to run this as an executable the first line has to be changed to the path of instalation of Python.
 The name of the bulb will also have to be changed to match the target. To check the name just use arp -a.
-To run as a terminal command it is advised to add an alias to the ~/.bashrc file for example "To run as a terminal command it is advised to add an alias to the ~/.bashrc file for example "alias bulb='~/yeelight/bulb.py'"
+To run as a terminal command it is advised to add an alias to the ~/.bashrc file for example "To run as a terminal command it is advised to add an alias to the $HOME/.bashrc file for example "alias bulb='$Home/yeelight/bulb.py'"
