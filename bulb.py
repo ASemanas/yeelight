@@ -34,7 +34,15 @@ match (inst):
   case ("temp"):
     print(bulb.set_color_temp(int(sys.argv[2])))
   case ("christmas"):
-    bulb.start_flow(Flow(3,Flow.actions.recover,yeelight.transitions.christmas(duration=125,sleep=1000)))
+    match (sys.argv[2]):
+      case ("start"):
+        bulb.start_flow(Flow(0,Flow.actions.recover,yeelight.transitions.christmas(duration=125,sleep=1000)))
+      case ("stop"):
+        bulb.stop_flow()
   case ("disco"):
-    bulb.start_flow(Flow(3,Flow.actions.recover,yeelight.transitions.disco(bpm=120)))
+    match (sys.argv[2]):
+      case ("start"):
+        bulb.start_flow(Flow(0,Flow.actions.recover,yeelight.transitions.disco(bpm=120)))
+      case ("stop"):
+        bulb.stop_flow()
   
